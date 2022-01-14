@@ -90,7 +90,7 @@
 // some
 // const arr = [5, 5, 5]
 
-// function every(callback, array) {
+// function some(callback, array) {
 //     for (let i = 0; i < array.length; i++) {
 //         if (callbackValue(array[i], i, array)) {
 //             return true
@@ -103,4 +103,4 @@
 //     return value === 3;
 // }
 
-// console.log(every(callbackValue, arr))
+// console.log(some(callbackValue, arr))

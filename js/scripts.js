@@ -19,7 +19,6 @@
 // }
 
 // find
-// const arr = [1, 2, 3]
 
 // function find(callback, array) {
 //     let value = null
@@ -31,14 +30,8 @@
 //     return value;
 // }
 
-// function callbackValue(item, index, array) {
-//     return item === 1;
-// }
-
-// console.log(find(callbackValue, arr))
 
 // findIndex
-// const arr = [1, 2, 3]
 
 // function findIndex(callback, array) {
 //     let value = null
@@ -50,13 +43,6 @@
 //     }
 //     return value;
 // }
-
-// function callbackValue(item, index, array) {
-//     return item === 4;
-// }
-
-// console.log(findIndex(callbackValue, arr))
-
 
 
 // includes
@@ -70,37 +56,29 @@
 // }
 
 // every
-// const arr = [3, 3, 3]
 
 // function every(callback, array) {
+//     if (array.length === 0) {
+//         return
+//     }
 //     for (let i = 0; i < array.length; i++) {
-//         if (!callbackValue(array[i], i, array)) {
+//         if (array[i] === undefined && !callbackValue(array[i], i, array)) {
 //             return false
 //         } 
 //     }
 //     return true
 // }
 
-// function callbackValue(value, index, array) {
-//     return value === 3;
-// }
-
-// console.log(every(callbackValue, arr))
 
 // some
-// const arr = [5, 5, 5]
+
 
 // function some(callback, array) {
 //     for (let i = 0; i < array.length; i++) {
-//         if (callbackValue(array[i], i, array)) {
+//         if (array[i] !== undefined && callbackValue(array[i], i, array)) {
 //             return true
-//         } 
+//         }
 //     }
 //     return false
 // }
 
-// function callbackValue(value, index, array) {
-//     return value === 3;
-// }
-
-// console.log(some(callbackValue, arr))
